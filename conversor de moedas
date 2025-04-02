@@ -1,0 +1,3 @@
+valorienes = prompt('digite o valor em ienes')
+umiene = 0.040
+alert('o valor em reais é R$' + valorienes * umiene)
