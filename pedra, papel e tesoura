@@ -1,0 +1,43 @@
+idade = prompt("Digite sua idade:");
+if (idade < 18) {
+  alert("Esse jogo não é para você!");
+}
+
+if (idade >= 18) {
+    alert("Bem-vindo ao jogo!");
+    escolhajogador = prompt("1.Pedra, 2.papel ou 3.tesoura?");
+    escolhacomputador = Math.floor(Math.random() * 3) + 1;
+
+    alert("Minha escolha foi: " + escolhacomputador);
+
+    if (escolhajogador == escolhacomputador) {
+      alert("Nem bom, nem ruim. Apenas um empate!");
+    }
+
+    if (escolhajogador == 1) {
+      if (escolhacomputador == 2) {
+        alert("Sua maré de azar é minha vitória. Eu venci!");
+      }
+      if (escolhacomputador == 3) {
+        alert("Parece que você está com sorte. Parabéns, você venceu!");
+      }
+    }
+
+    if (escolhajogador == 2) {
+      if (escolhacomputador == 1) {
+        alert("Parece que você está com sorte. Parabéns, você venceu!");
+      }
+      if (escolhacomputador == 3) {
+        alert("Sua maré de azar é minha vitória. Eu venci!");
+      }
+    }
+
+    if (escolhajogador == 3) {
+      if (escolhacomputador == 1) {
+        alert("Sua maré de azar é minha vitória. Eu venci!");
+      }
+      if (escolhacomputador == 2) {
+        alert("Parece que você está com sorte. Parabéns, você venceu!");
+      }
+    }
+  }
